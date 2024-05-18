@@ -89,7 +89,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div class="p-4 hidden sm:block md:hidden">
+            <div class="p-4 hidden sm:block lg:hidden">
                 <div className='flex justify-between'>
                     <h1 className="font-bold text-2xl">Company</h1>
                     <button className='hover:bg-indigo-600 rounded-full w-10 border border-zinc-950 h-10 ' onClick={() => setCompany(!company)}>

@@ -28,17 +28,13 @@
   .service-Body {
     flex-direction: column;
   }
-
   .service-content-container {
     flex-wrap: wrap;
     width: 100%;
   }
-
   .service-content {
     width: 100%;
-  }
-
-  
+  } 
   .img-card{width: 100%;
   }
 
@@ -62,7 +58,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  
   }
   .landing{
     flex-wrap: wrap;
