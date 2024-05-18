@@ -1,0 +1,98 @@
+.HeaderContent {
+  width: 600px;
+}
+
+.bag {
+  width: 250px;
+}
+
+#bg-mg {
+  background-image: url(.\assets\Travel-Point-leftSide.png);
+}
+
+
+.background-image-container {
+  background-image: url('./assets/bg-img-travel-point.png');
+  /* Replace with your image URL */
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: px;
+}
+
+#navBar{
+  z-index: 666;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .service-Body {
+    flex-direction: column;
+  }
+
+  .service-content-container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .service-content {
+    width: 100%;
+  }
+
+  .background-image-container {
+    /* display: none; */
+    /* Hide the container on small screens */
+  }
+  .img-card{width: 100%;
+  }
+
+  .img1{
+    margin-left: 0px;
+  }
+  .slist{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .b1{
+    width: 100%;
+  }
+  .services{
+    flex-direction: column;
+  }
+  .logolist{
+    margin-top: 100px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  }
+  .landing{
+    flex-wrap: wrap;
+  }
+  .ord1{
+    order: 2;
+    width: 100%;
+    margin-top: -250px;
+  }
+  .ord2{
+    order: 1;
+    width: 100%;
+    
+  }
+  .hw{
+    width: 100%;
+    text-align: center;
+  }
+  .im1{
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
+  .hw1{
+    margin-left: 0px;
+    text-align: center;
+    width: 100;
+  }
+  
+}
