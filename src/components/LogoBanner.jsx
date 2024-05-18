@@ -11,7 +11,7 @@ function LogoBanner() {
   return (
     <div className='my-10'>
         <div className='flex justify-between md:mx-36 logolist'>
-            <img src={logo1} alt="" className='im1'/>
+            <img src={logo1} alt="" className=' hover:bg-indigo-600'/>
             <img src={logo2} alt=""  className='im1'/>
             <img src={logo3} alt=""  className='im1'/>
             <img src={logo4} alt=""  className='im1'/>

@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .HeaderContent {
   width: 600px;
 }
@@ -22,9 +25,18 @@
 #navBar{
   z-index: 666;
 }
+.details-hide1{
+  display:none;
+}
 
 
 @media only screen and (max-width: 800px) {
+  .details-hide1{
+    display: block;
+  }
+  .details-hide2{
+    display: none;
+  }
   .service-Body {
     flex-direction: column;
   }

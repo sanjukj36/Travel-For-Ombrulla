@@ -40,7 +40,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div class="p-4 hidden lg:block flex-1">
+            <div class="p-4 details-hide2 hidden lg:block flex-1">
 
                 <div className='flex justify-between'>
                     <ul className='text-center '>
@@ -65,7 +65,8 @@ function Footer() {
                 </div>
 
             </div>
-            <div class="p-4 hidden md:block lg:hidden">
+
+            <div class="p-4 details-hide1 hidden md:block lg:hidden">
                 <div className='flex justify-between'>
                     <ul className='text-center '>
                         <li className='head-title font-bold mb-5'> Company</li>
