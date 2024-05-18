@@ -13,7 +13,6 @@
 
 .background-image-container {
   background-image: url('./assets/bg-img-travel-point.png');
-  /* Replace with your image URL */
   position: absolute;
   z-index: -1;
   right: 0;
@@ -39,10 +38,7 @@
     width: 100%;
   }
 
-  .background-image-container {
-    /* display: none; */
-    /* Hide the container on small screens */
-  }
+  
   .img-card{width: 100%;
   }
 
