@@ -23,18 +23,18 @@ function Footer() {
 
 
     return (
-        <div id='contact' class="flex flex-col md:flex-col lg:flex-row">
+        <footer id='contact' class="flex flex-col md:flex-col lg:flex-row">
             <div class="p-5 flex-1">
                 <div>
-                    <img src={logo} className="w-100" alt="Logo" />
+                    <img src={logo} className="w-100 lazyload" alt="Logo" loading="lazy"/>
                     <p className='text-gray-900 text-opacity-50 mt-5'>
                         Contrary to popular belief, Lorem Ipsum is not simply random text. It
                         has roots in a piece of classical Latin literature from 45 BC.
                     </p>
                     <div className='flex p-5'>
-                        <img src={facebook} alt="" />
-                        <img className="ms-5" src={twitter} alt="" />
-                        <img className='ms-5' src={instagram} alt="" />
+                        <img className='lazyload' src={facebook} alt="" loading="lazy"/>
+                        <img className="ms-5 lazyload" src={twitter} alt="" loading="lazy"/>
+                        <img className='ms-5 lazyload' src={instagram} alt="" loading="lazy"/>
 
 
                     </div>
@@ -143,7 +143,7 @@ function Footer() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

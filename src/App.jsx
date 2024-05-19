@@ -7,6 +7,8 @@ import Destination from './components/Destination'
 import TravelPoint from './components/TravelPoint'
 import KeyFeatures from './components/KeyFeatures'
 import Footer from './components/Footer'
+import { NavProvider } from './contexts/NavContext'
+import 'lazysizes';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,14 +16,15 @@ function App() {
   return (
     <>
       <div className="bg-white">
-        <Header />
-        <LogoBanner/>
-        <Services/>
-        <Destination/>
-        <TravelPoint/>
-        <KeyFeatures/>
-        <Footer/>
-
+        <NavProvider>
+          <Header />
+          <LogoBanner />
+          <Services />
+          <Destination />
+          <TravelPoint />
+          <KeyFeatures />
+          <Footer />
+        </NavProvider>
       </div>
     </>
   )

@@ -4,9 +4,9 @@ import mainImg from '../assets/Travel-Point-leftSide.png'
 
 function TravelPoint() {
     return (
-        <div id='discover' className='flex flex-col lg:flex-row my-20 bg-mg background-image-containere'>
+        <section id='discover' className='flex flex-col lg:flex-row my-20 bg-mg background-image-containere'>
             <div className=''>
-                <img className='w-320' src={mainImg} alt="" />
+                <img className='w-320 lazyload' src={mainImg} alt="" loading="lazy"/>
             </div>
             <div className='m-20' >
                 <h1 className='text-3xl text-pink-500 font-bold'>TRAVEL POINT</h1>
@@ -40,7 +40,7 @@ function TravelPoint() {
 
 
 
-        </div>
+        </section>
     )
 }
 

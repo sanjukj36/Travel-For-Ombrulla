@@ -9,15 +9,15 @@ import logo5 from "../assets/LogoBanner/Group 5.png";
 
 function LogoBanner() {
   return (
-    <div className='my-10'>
+    <section className='my-10'>
         <div className='flex justify-between md:mx-36 logolist'>
-            <img src={logo1} alt="" className=' hover:bg-indigo-600'/>
-            <img src={logo2} alt=""  className='im1'/>
-            <img src={logo3} alt=""  className='im1'/>
-            <img src={logo4} alt=""  className='im1'/>
-            <img src={logo5} alt=""  className='im1'/>
+            <img src={logo1} alt="" className='lazyload hover:bg-indigo-600' loading="lazy"/>
+            <img src={logo2} alt=""  className='im1 lazyload' loading="lazy"/>
+            <img src={logo3} alt=""  className='im1 lazyload' loading="lazy"/>
+            <img src={logo4} alt=""  className='im1 lazyload' loading="lazy"/>
+            <img src={logo5} alt=""  className='im1 lazyload' loading="lazy"/>
         </div>
-    </div>
+    </section>
   )
 }
 

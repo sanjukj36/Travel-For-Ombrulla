@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import logo from "../assets/Logo.png";
+import { NavContext } from '../contexts/NavContext';
 
 function Nav() {
     const Links = [
@@ -9,13 +10,13 @@ function Nav() {
         { name: 'Contact', link: '#contact' }
     ];
 
-    const [open, setOpen] = useState(false); // Change initial state to false
-
+    // const [open, setOpen] = useState(false); 
+    const {open, setOpen} = useContext(NavContext);
     return (
-        <div className='shadow-m w-full fixed top-0 left-0'>
+        <nav role="navigation" className='shadow-m w-full fixed top-0 left-0'>
             <div id='navBar' className='md:flex item-center justify-between bg-transparent py-4 md:px-10 px-7'>
                 <div>
-                    <img src={logo} className=" shrink-0 self-start w-100 aspect-[1.03] fill-[linear-gradient(281deg,#5D50C6_7.11%,#F85E9F_93.54%)]" alt="Logo" />
+                    <img src={logo}  className="lazyload shrink-0 self-start w-100 aspect-[1.03] fill-[linear-gradient(281deg,#5D50C6_7.11%,#F85E9F_93.54%)]" alt="Logo" loading="lazy" />
                 </div>
                 <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
                     <ion-icon name={open ? "close" : "menu"}></ion-icon>
@@ -34,7 +35,7 @@ function Nav() {
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
 
     );
 }
