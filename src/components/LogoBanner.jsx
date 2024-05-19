@@ -8,6 +8,7 @@ import logo5 from "../assets/LogoBanner/Group 5.png";
 
 
 function LogoBanner() {
+
   return (
     <section className='my-10'>
         <div className='flex justify-between md:mx-36 logolist'>

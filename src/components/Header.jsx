@@ -9,6 +9,7 @@ import playCircle from "../assets/play-circle.png"
 
 
 function Header() {
+
     return (
         <>
             <Nav />

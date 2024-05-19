@@ -9,6 +9,7 @@ import KeyFeatures from './components/KeyFeatures'
 import Footer from './components/Footer'
 import { NavProvider } from './contexts/NavContext'
 import 'lazysizes';
+import ErrorBoundary from './ErrorBoundary'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,16 +17,38 @@ function App() {
   return (
     <>
       <div className="bg-white">
+
         <NavProvider>
-          <Header />
-          <LogoBanner />
-          <Services />
-          <Destination />
-          <TravelPoint />
-          <KeyFeatures />
-          <Footer />
+          <ErrorBoundary>
+            <Header />
+          </ErrorBoundary>
+          <ErrorBoundary>
+
+            <LogoBanner />
+          </ErrorBoundary>
+          <ErrorBoundary>
+
+            <Services />
+          </ErrorBoundary>
+          <ErrorBoundary>
+
+            <Destination />
+          </ErrorBoundary>
+          <ErrorBoundary>
+
+            <TravelPoint />
+          </ErrorBoundary>
+          <ErrorBoundary>
+
+            <KeyFeatures />
+          </ErrorBoundary>
+          <ErrorBoundary>
+
+            <Footer />
+          </ErrorBoundary>
+
         </NavProvider>
-      </div>
+      </div >
     </>
   )
 }
